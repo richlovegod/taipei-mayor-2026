@@ -2,22 +2,49 @@
 <html lang="zh-Hant-TW">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>2026 臺北市長選舉 候選人對照（準備中）</title>
-<style>
-  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif; background: #f5f5f2; color: #1e1e1e; }
-  main { max-width: 36em; margin: 18vh auto 0; padding: 0 20px; line-height: 1.8; }
-  h1 { font-size: 1.5rem; margin: 0 0 8px; }
-  p { margin: 0 0 8px; }
-  svg { width: 48px; height: 48px; color: #c4281c; }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light">
+<title>2026 臺北市長選舉 候選人對照</title>
+<meta name="description" content="3號沈伯洋與5號蔣萬安的政見、兩岸立場、經歷、紀錄與爭議，逐條附公開來源。不推薦、不評分、不收錄民調。">
+<meta property="og:title" content="2026 臺北市長選舉 候選人對照">
+<meta property="og:description" content="兩位主要候選人的政見與立場並排對照，逐條附來源。不推薦、不評分、不收錄民調。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vote.ginochang.com/">
+<meta property="og:image" content="https://vote.ginochang.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://vote.ginochang.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='none' stroke='%23C4281C' stroke-width='9'/%3E%3Cpath d='M56 25V75M54 46L37 58' stroke='%23C4281C' stroke-width='9' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="9"/><path d="M56 25V75M54 46L37 58" stroke="currentColor" stroke-width="9" stroke-linecap="round" fill="none"/></svg>
-  <h1>2026 臺北市長選舉 候選人對照</h1>
-  <p>網站正在做最後查核，今天稍晚上線。</p>
-  <p>投票日：2026 年 11 月 28 日（星期六）上午 8 點到下午 4 點。</p>
-</main>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="top" id="top">
+  <div class="bar">
+    <a class="brand" href="#/" aria-label="回到首頁">
+      <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="9"/><path d="M56 25V75M54 46L37 58" stroke="currentColor" stroke-width="9" stroke-linecap="round" fill="none"/></svg>
+      <span class="brand-text"><span class="brand-title">臺北市長候選人對照</span><span class="brand-sub" id="brand-sub">2026-11-28（六）投票</span></span>
+    </a>
+    <nav class="topnav" aria-label="主要分類" id="topnav"></nav>
+    <div class="ctrl">
+      <button type="button" id="btn-search" aria-label="搜尋">搜尋</button>
+      <button type="button" id="btn-size" aria-label="調整字級">字級</button>
+      <button type="button" id="btn-swap" aria-label="左右對調兩位候選人的順序">對調</button>
+    </div>
+  </div>
+</header>
+<main id="main" tabindex="-1"></main>
+<nav class="tabbar" aria-label="主要分類" id="tabbar"></nav>
+<dialog class="sheet" id="sheet" aria-labelledby="sheet-title">
+  <div class="sheet-inner">
+    <div class="sheet-head"><h2 id="sheet-title">來源</h2><button type="button" class="sheet-close" id="sheet-close">關閉</button></div>
+    <div class="sheet-body" id="sheet-body"></div>
+  </div>
+</dialog>
+<noscript><p class="noscript">這個網站需要開啟 JavaScript 才能顯示內容。</p></noscript>
+<script src="data.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
