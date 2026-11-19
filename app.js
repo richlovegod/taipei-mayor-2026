@@ -86,6 +86,9 @@
     return '<section class="srclist" aria-labelledby="srch"><h2 id="srch">本頁來源</h2><ol>' + lis.join('') + '</ol></section>';
   };
   var NOLINK_NOTE = '投票日前十日內暫不提供連結，11/28 下午 4 點投票結束後恢復';
+  // Voting ends 2026-11-28 16:00 Taipei time (08:00 UTC); after that, every source shows its link again.
+  var LINKS_OPEN = Date.now() >= Date.UTC(2026, 10, 28, 8, 0, 0);
+  if (LINKS_OPEN) Object.keys(SOURCES).forEach(function (k) { SOURCES[k].nolink = false; });
   function srcLine(s) {
     var title = s.nolink ? '<span>' + esc(s.title || '') + '</span>'
       : '<a class="ext" href="' + esc(safeUrl(s.url)) + '" target="_blank" rel="noopener noreferrer">' + esc(s.title || s.url) + '</a>';
